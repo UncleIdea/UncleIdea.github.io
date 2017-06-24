@@ -100,6 +100,16 @@
 </header><!-- end header -->
 
 <!-- Main Content -->
+<script>
+	(function(){
+		if('{{ page.password }}'){
+			if (prompt('请输入文章密码','') !== 'kaiche.us'){
+				alert('密码错误！');
+				history.back();
+			}
+		}
+	})();
+</script>
 <section class="main clearfix">
 
     <section class="top" style="background: url('/img/测试.png');">
